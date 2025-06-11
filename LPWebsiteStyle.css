@@ -381,6 +381,17 @@ footer {
     text-align: center;
 }
 
+.footer-email {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
