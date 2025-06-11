@@ -75,7 +75,7 @@ nav {
 }
 
 .logo1 {
-    font-size: 0.70rem;
+    font-size: 0.78rem;
     font-weight: bold;
     color: var(--white);
     display: block;
@@ -102,7 +102,7 @@ nav {
     transform: translateY(-3px) scale(1.05);
 }
 
-/* Underline animation */
+/* Underline animation for regular nav links */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -118,19 +118,53 @@ nav {
     width: 100%;
 }
 
+/* Remove underline for Book Room button */
+.nav-book-btn::after {
+    display: none;  /* This removes the underline only for the Book Room button */
+}
+
 .nav-book-btn {
-    background: var(--);
-    color: var(--white) !important;
-    padding: 10px 20px;
+    background: var(--yellow);
+    color: var(--maroon) !important;
+    padding: 10px 80px;  /* Increased horizontal padding from 80px to 100px */
     border-radius: 25px;
     font-weight: bold;
+    font-size: 1.0rem;
     transition: all 0.3s ease;
+    border: 6px solid var(--yellow);
+    box-shadow: 0 4px 15px rgba(255, 223, 0, 0.3);
+    position: relative;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    
+
 }
 
 .nav-book-btn:hover {
-    background: var(--goldenrod);
+    background: var(--cornsilk);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 223, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 223, 0, 0.4);
+    border-color: var(--cornsilk);
+    text-decoration: none;
+}
+
+/* Add a subtle glow effect */
+.nav-book-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 25px;
+    background: var(--yellow);
+    z-index: -1;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.nav-book-btn:hover::before {
+    opacity: 0.5;
 }
 
 /* Hero Section with Animated Background */
