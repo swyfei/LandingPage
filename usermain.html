@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>usermain</title>
+  <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+  <div class="wrapper">
+  <!-- side nav bar -->
+  <header>
+    <div class="sidebar-container">
+      <div class="sidebar">
+        <img src="images/PUPwestoLogo.png" alt="pup-logo" id="pup-logo">
+        <ul>
+          <li><img src="../images/home-icon.png" alt="home-icon" class="nav-icon nav-target" id="home-icon"></li>
+          <li><img src="../images/new-icon.png" alt="book-icon" class="nav-icon nav-target" id="book-icon"></li>
+          <li><img src="../images/request-icon.png" alt="history-icon" class="nav-icon nav-target" id="history-icon"></li>
+          <li><img src="../images/message-icon.png" alt="message-icon" class="nav-icon nav-target" id="message-icon"></li>
+        </ul>
+      </div>
+      <div class="sidebar-labels">
+        <ul>
+          <li id="home-label" class="nav-target">Home</li>
+          <li id="book-label" class="nav-target">Book</li>
+          <li id="history-label" class="nav-target">History</li>
+          <li id="message-label" class="nav-target">Message</li>
+        </ul>
+      </div>
+    </div>
+   
+  </header>
+
+
+  <main>
+    <!-- header -->
+    <section class="header-section">
+      <div class="title-header">
+        <h2>PUP Online Laboratory/Classroom Booking System</h2>
+        <p>Your go-to platform for hassle-free campus space reservations</p>
+      </div>
+
+
+      <div class="profile-header">
+        <div class="profile-name">
+          <p>Juan Delacruz</p>
+          <p>edmarcellasco@iskolarngbayan.edu.ph</p>
+        </div>
+        <img src="../images/profile-icon.png" alt="profile-icon" class="nav-target", id="profile-icon">
+      </div>
+    </section>
+
+
+    <section class="main-wrapper">
+      <div class="main-container">
+        <h1>Welcome Isko!</h1>
+        <h3>Guidelines</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
+      </div>
+
+
+      <div class="new-request-container">
+        <div class="new-request-wrapper">    
+          <div class="container-title">
+            <h2>New Request</h2>
+            <img src="../images/plus-icon.png" alt="plus-icon">
+          </div>
+
+
+          <form action="">
+            <div class="filter-title">
+              <h4>Reservation Details</h4>
+              <button class="filter-button">Filter</button>
+            </div>
+
+
+            <div class="row-div">
+              <label for="selectdate">Date: </label>
+              <input type="date" name="selectdate" placeholder="select date">
+
+
+              <label for="starttime">Start Time: </label>
+              <input type="time" name="starttime" placeholder="select time">
+
+
+              <label for="endtime">End Time: </label>
+              <input type="time" name="endtime" placeholder="select time">
+            </div>
+
+
+            <div class="row-div">
+              <label for="building">Building: </label>
+              <select name="building-option" id="building-options">
+                <option value="" disabled selected>select building</option>
+                <option value="main-building">Main</option>
+                <option value="chk-building">CHK</option>
+                <option value="cea-building">CEA</option>
+              </select>
+
+
+              <label for="room-type">Type: </label>
+              <select name="room-type-option" id="room-type-option">
+                <option value="" disabled selected>select room type</option>
+                <option value="comp-lab">Computer Laboratory</option>
+                <option value="sci-lab">Science Laboratory</option>
+                <option value="lecture-room">Lecture Room</option>
+              </select>
+            </div>
+          </form>
+
+
+          <div class="room-container">
+            <div class="form-title">
+              <h4>Available Rooms </h4>
+              <p><i>Choose your preferred room</i></p>
+            </div>
+
+
+            <div class="room-instance-wrapper">
+              <div class="room-instance">S506</div>        
+              <div class="room-details">
+                <p><strong>Type:</strong> Computer Lab</p>
+                <p><strong>Capacity:</strong> 30 students</p>
+                <p><strong>Equipment:</strong> Projector, LED TV</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+         
+        <div class="order-detail-container">
+            <div class="modal">
+              <div class="order-detail-wrapper">
+                <div class="form-title">
+                  <h2>Additional Details</h2>
+                  <p>Fill up additional details</p>
+                </div>
+
+
+                <form action="">
+                  <div class="col-div">
+                    <div class="row-div">
+                      <label for="purpose-detail">Purpose of Reservation: </label>
+                      <input type="text" name="purpose-detail" id="purpose-detail">
+                    </div>
+
+
+                    <div class="row-div">
+                      <label for="prof-in-charge">Professor in Charge: </label>
+                      <input type="text" name="prof-in-charge" id="prof-in-charge">
+                    </div>
+
+
+                    <div class="row-div">
+                      <label for="attendees">Expected Attendees: </label>
+                      <input type="number" name="attendees" id="attendees">
+                    </div>
+
+
+                    <div class="row-div">
+                      <label for="particulars-detail">Particulars</label>
+                      <select name="particulars-detail" id="particulars-detail">
+                        <option value="LT1">LED TV</option>
+                        <option value="VG2">VGA/HDMI</option>
+                        <option value="PJ3">Projector</option>
+                        <option value="ET4">Extension</option>
+                        <option value="OT5">Others</option>
+                      </select>
+                    </div>
+                   
+                    <div class="row-div">
+                      <button class="back-btn" type="button">Back</button>
+                      <button class="confirm-button">Confirm</button>
+                    </div>          
+                  </div>          
+                </form>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="summary-container">
+            <div class="reservation-summary">
+              <div class="col-div">
+                <h2>Reservation Summary</h2>
+                <hr class="divider">
+              </div>
+
+
+              <div class="summary-section">
+                <h3>Personal Information</h3>
+                <div class="info-grid">
+                  <div><strong>Name:</strong></div>
+                  <div></div>
+
+
+                  <div class="row-div">
+                    <div><strong>Yr & Sec:</strong></div>
+                    <div></div>
+                    <div><strong>Type:</strong></div>
+                    <div></div>
+                  </div>
+                   
+                  <div><strong>Contact No.:</strong></div>
+                  <div><strong>Gmail:</strong></div>          
+                </div>
+              </div>
+
+
+            <div class="row-div">
+              <div class="summary-section">
+                <h3>Reservation Details</h3>
+                <div class="info-grid">
+                  <div><strong>Date:</strong></div>
+                  <div></div>
+                  <div><strong>Time:</strong></div>
+                  <div></div>
+                  <div><strong>Purpose:</strong></div>
+                  <div></div>
+                  <div><strong>No. of Attendees:</strong></div>
+                  <div></div>
+                  <div><strong>Professor-in-charge:</strong></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+
+
+       
+            <div class="summary-section">
+                <h3>Particulars Details</h3>
+                <div class="particulars-header">
+                  <div><strong>Particulars</strong></div>
+                  <div><strong>Qty</strong></div>
+                </div>        
+                <div class="particulars-row"><div>Item Name</div><div>Qty</div></div>
+                <div class="particulars-row"><div>Item Name</div><div>Qty</div></div>
+                <div class="particulars-row"><div>Item Name</div><div>Qty</div></div>
+            </div>
+
+
+              <div class="button-group">
+                <button class="back-btn">Back</button>
+                <button class="confirm-btn">Confirm</button>
+              </div>
+            </div>
+        </div>      
+      </div>
+
+
+      <div class="request-container">
+        <div class="col-div">
+          <h2>Your Requests</h2>
+          <hr>
+        </div>
+
+
+        <div class="table-container">
+          <table class="reservation-table">
+            <thead>
+              <tr>
+                <th>ReservationId</th>
+                <th>Date</th>
+                <th>Reserve Date</th>
+                <th>Reserve Time</th>
+                <th>Room</th>
+                <th>Type</th>
+                <th>Particulars</th>
+                <th>Qty</th>            
+                <th>Prof-in-Charge</th>
+                <th>Expected People</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="new-button nav-target" id="new-button">Add New</button>
+
+
+      </div>
+
+
+      <div class="message-container">
+        <div class="col-div">
+          <h2>Notifications</h2>
+          <hr>
+        </div>
+
+
+        <div class="notification-panel">
+          <div class="message-instance">
+            Good Morning ____, <br>
+            Your booking request, Reservation ID, has been approved/declined.<br>
+            Thank you for using the program!
+          </div>
+        </div>
+      </div>
+
+
+      <!-- profile container -->
+      <div class="profile-container">
+        <div class="profile-wrapper">
+         
+          <div class="profile-wrapper2">
+
+
+            <div class="row-div">
+              <h6>User Profile</h6>
+              <img src="" alt="edit-icon">
+            </div>
+
+
+            <img src="" alt="profile" id="profile-pic">
+
+
+            <div class="row-div">
+              <form action="">
+                <label for="user-name"></label>
+                <input type="text" name="user-name" id="user-name">
+              </form>
+              <img src="" alt="edit-icon">
+            </div>
+
+
+          </div>
+
+
+          <div class="form-wrapper">
+            <form action="">
+
+
+                <div class="col-div">
+                  <label for="user-id">User ID</label>
+                  <input type="text" name="user-id" id="user-id">
+                </div>
+
+
+                <div class="row-div">
+                  <div class="col-div">
+                    <label for="user-program">Program</label>
+                    <input type="text" name="user-program" id="user-program">
+                  </div>
+
+
+                  <div class="col-div">
+                    <label for="user-year">Year</label>
+                    <input type="text" name="user-year" id="user-year">
+                  </div>
+
+
+                  <div class="col-div">
+                    <label for="user-block">Block</label>
+                    <input type="text" name="user-block" id="user-block">
+                  </div>
+                </div>
+
+
+                <div class="row-div">
+                  <div class="col-div">
+                    <label for="user-contact">Contact</label>
+                    <input type="number" name="user-contact" id="user-contact">
+                  </div>
+
+
+                  <div class="col-div">
+                    <label for="user-email">E-mail</label>
+                    <input type="email" name="user-email" id="user-email">
+                  </div>      
+                </div>
+             
+                <label for="user-department">Department</label>
+                <input type="text" name="user-department" id="user-department">
+
+
+                <div class="button-row-div">
+                  <button class="edit-btn">Edit</button>
+                  <button class="save-btn">Save</button>
+                </div>                  
+            </form>        
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>
+
